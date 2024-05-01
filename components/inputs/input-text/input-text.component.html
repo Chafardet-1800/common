@@ -16,6 +16,12 @@
     </ng-content>
   </span>
 
+  <!-- Espacio donde puede ir cualquier cosa -->
+  <span class="ps-3" matPrefix #dinamycPreffix>
+    <ng-content class="w-100" select="[dinamycPreffix]">
+    </ng-content>
+  </span>
+
   <!-- Mensajes de error del input -->
 
   <!-- Required -->
