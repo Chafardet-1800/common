@@ -22,6 +22,8 @@
     </ng-content>
   </span>
 
+  <mat-hint *ngIf="hints" [align]="hintsAlign"><strong>{{hints}}</strong> </mat-hint>
+
   <!-- Mensajes de error del input -->
 
   <!-- Required -->

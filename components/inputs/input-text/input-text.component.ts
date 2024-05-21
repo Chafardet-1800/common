@@ -46,6 +46,16 @@ export class CmmInputTextComponent implements CmmCustomInput {
   @Input() placeholder: string = '';
 
   /**
+   * Placeholder del input
+   */
+  @Input() hints: string = '';
+
+  /**
+   * Placeholder del input
+   */
+  @Input() hintsAlign: 'start' | 'end' = 'start';
+
+  /**
    * Valor del input
    */
   currentValue: string = ''
