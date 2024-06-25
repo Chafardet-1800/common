@@ -80,7 +80,7 @@
         <div class="d-flex justify-content-between align-items-center px-3">
 
           <!-- Imagen del campo -->
-          <img *ngIf="displayImages" class="me-1" [ngStyle]="{'width.px': imgDimentions.width, 'height.px': imgDimentions.height,  'max-height': '24px'}" [src]="imagesRoute + option[imageSearchKey].toLowerCase() + '.svg'" alt="">
+          <img *ngIf="displayImages" class="me-1" [ngStyle]="{'width.px': imgDimentions.width, 'height.px': imgDimentions.height,  'max-height': '24px'}" [src]="option[imageSearchKey]" alt="">
 
           <!-- Texto de opción -->
           <p class="m-0">{{siblingOptionValue? option[siblingOptionValue] + ' | ' + option[optionName]: option[optionName]}}</p>
