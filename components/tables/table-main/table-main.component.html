@@ -227,7 +227,7 @@
             <ng-template #actionColumn>
 
               <!-- Componente para celdas de acción -->
-              <cmm-cmp-t-actions [actionSelected]="element[column].nameAction" [element]="element[column]" (emitValue)="reciveActionDone($event)" [expandedElement]="expandedElement === element" (emitExpanded)="expandElement(element)">
+              <cmm-cmp-t-actions [actionSelected]="element[column].nameAction" [element]="element[column]" (emitValue)="reciveActionDone($event)" [expandedElement]="expandedElement === element" (emitExpanded)="expandElement(element, $event.columnName)">
               </cmm-cmp-t-actions>
 
             </ng-template>

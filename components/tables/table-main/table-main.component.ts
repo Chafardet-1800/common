@@ -463,12 +463,12 @@ export class CmmTableMainComponent implements OnInit, OnChanges {
    * !No entiendo
    * @param element
    */
-  expandElement(element: any) {
+  expandElement(element: any, columnName: string) {
 
     this.expandedElement = this.expandedElement === element ? null : element;
 
     if(this.expandedElement) {
-      this.emitActionDone.emit(element);
+      this.emitActionDone.emit(element[columnName]);
     }
 
   }
